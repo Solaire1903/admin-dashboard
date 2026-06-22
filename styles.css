@@ -20,7 +20,6 @@ body {
 .sidebar {
   background-color: var(--primary-color);
 
-  grid-column: 1 / span 1;
   grid-row: 1 / span 5;
 
   display: grid;
@@ -28,14 +27,14 @@ body {
 }
 
 .header {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .main-content {
   background-color: var(--secondary-color);
 
-  grid-column: 2 / span 1;
   grid-row: 2 / span 4;
 }
 
