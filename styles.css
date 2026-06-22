@@ -1,4 +1,46 @@
+:root {
+  --primary-color: #1992d4;
+  --secondary-color: #e2e8f0;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-color);
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main-page{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.main-content {
+  background-color: var(--secondary-color);
+
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+}
+
+
+
