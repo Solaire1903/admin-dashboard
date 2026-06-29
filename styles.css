@@ -116,6 +116,37 @@ img {
   gap: 20px;
 }
 
+.greeting {
+  padding-left: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.greeting>img {
+  height: 90px;
+  width: 90px;
+
+  grid-row: 1 / span 2;
+}
+
+.greeting-text {
+  font-size: 1em;
+
+  align-self: end;
+
+}
+
+.admin-name {
+  font-size: 1.3em;
+
+  align-self: start;
+}
+
 .header-buttons {
   display: flex;
   justify-content: center;
