@@ -31,11 +31,6 @@ img {
   width: 30px;
 }
 
-.user-icon {
-  height: 60px;
-  width: 60px;
-}
-
 .sidebar {
   background-color: var(--primary-color);
   color: var(--light-text-color);
@@ -117,15 +112,23 @@ img {
   gap: 20px;
 }
 
+.user-icon, .trending-user-icon {
+  height: 60px;
+  width: 60px;
+}
+
 .greeting {
   padding-left: 50px;
+}
 
+.greeting, .trending-user {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
   align-items: center;
+  column-gap: 15px;
 }
 
 .greeting>img {
@@ -265,6 +268,21 @@ img {
 
 .announcement-text {
   font-size: 0.8em;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.trending-user-project{
+  font-size: 0.9em;
+  color: var(--grey-text-color);
+}
+
+.trending-user-icon {
+  grid-row: 1 / span 2;
 }
 
 .project-card, .announcement-card, .trending-card {
