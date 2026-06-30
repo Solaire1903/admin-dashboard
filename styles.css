@@ -166,7 +166,7 @@ img {
 
 .main-content {
   background-color: var(--secondary-color);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   grid-row: 2 / span 4;
 
@@ -242,8 +242,13 @@ img {
   grid-template-rows: 1fr 5fr;
 }
 
-.announcement-card {
+.announcement-card, .trending-card {
   background-color: white;
   border: 20px solid white;
-  border-radius: 10px
+  border-radius: 10px;
+}
+
+.project-card, .announcement-card, .trending-card {
+  z-index: 1;
+  box-shadow: 5px 5px 5px lightgray;
 }
