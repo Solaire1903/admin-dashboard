@@ -191,13 +191,13 @@ img {
 
 .project-card-area {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
 .project-card {
   height: 200px;
-  width: 300px;
+  width: 350px;
   background-color: white;
   border-left: 10px solid rgb(242, 175, 51);
   border-radius: 10px;
