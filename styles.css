@@ -279,6 +279,8 @@ img {
 .trending-user-project{
   font-size: 0.9em;
   color: var(--grey-text-color);
+
+  align-self: start;
 }
 
 .trending-user-icon {
