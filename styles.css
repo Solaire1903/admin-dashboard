@@ -4,6 +4,7 @@
 
   --light-text-color: white;
   --dark-text-color: black;
+  --grey-text-color: rgb(73, 72, 72)
 }
 
 * {
@@ -219,7 +220,7 @@ img {
 }
 
 .card-text, .announcement-text {
-  color: rgb(73, 72, 72);
+  color: var(--grey-text-color);
   font-weight: 500;
 }
 
@@ -245,13 +246,24 @@ img {
 .announcement-card {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  align-items: center;
+  align-items: stretch;
 }
 
 .announcement-card, .trending-card {
   background-color: white;
   border: 20px solid white;
   border-radius: 10px;
+}
+
+.announcement {
+  border-bottom: 1px solid var(--grey-text-color);
+
+  display: grid;
+  align-items: center;
+}
+
+.announcement:last-child {
+  border-bottom: none;
 }
 
 .announcement-text {
