@@ -166,6 +166,7 @@ img {
 
 .main-content {
   background-color: var(--secondary-color);
+  padding-bottom: 20px;
 
   grid-row: 2 / span 4;
 
@@ -183,7 +184,7 @@ img {
   grid-template-rows: 1fr 10fr;
 }
 
-.projects>p {
+.projects>p, .announcement-title, .trending-title {
   font-size: 1.3em;
 
   align-self: center;
@@ -234,5 +235,15 @@ img {
   width: 30px;
 }
 
+.announcements, .trending {
+  padding-right: 30px;
 
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
 
+.announcement-card {
+  background-color: white;
+  border: 20px solid white;
+  border-radius: 10px
+}
