@@ -175,7 +175,34 @@ img {
 }
 
 .projects {
+  padding-left: 30px;
+  padding-right: 30px;
   grid-row: 1 / span 2;
+
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+.projects>p {
+  font-size: 1.3em;
+
+  align-self: center;
+}
+
+.project-card-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  border-left: 10px solid rgb(242, 175, 51);
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
 
