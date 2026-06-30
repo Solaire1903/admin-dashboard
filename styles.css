@@ -257,9 +257,6 @@ img {
 
 .announcement {
   border-bottom: 1px solid var(--grey-text-color);
-
-  display: grid;
-  align-items: center;
 }
 
 .announcement:last-child {
