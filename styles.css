@@ -19,7 +19,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr) 0.3fr;
 }
 
 h1, p, button {
@@ -291,4 +291,20 @@ img {
 .project-card, .announcement-card, .trending-card {
   z-index: 1;
   box-shadow: 5px 5px 5px lightgray;
+}
+
+footer {
+  background-color: rgb(12, 118, 168);
+  color: var(--light-text-color);
+
+  grid-column: 1 / span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+a {
+  color: var(--light-text-color);
 }
