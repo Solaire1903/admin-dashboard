@@ -1,6 +1,8 @@
 :root {
   --primary-color: #1992d4;
+  --primary-color-hover: #187eb5;
   --secondary-color: #e2e8f0;
+  --secondary-color-hover: #dedede;
 
   --light-text-color: white;
   --dark-text-color: black;
@@ -22,13 +24,30 @@ body {
   grid-template-rows: repeat(5, 1fr) 0.3fr;
 }
 
-h1, p, button {
+h1,
+p,
+button {
   font-weight: 600;
 }
 
 img {
   height: 30px;
   width: 30px;
+}
+
+.navigation>*:hover,
+.branding>*:hover,
+.search-bar-area>img:hover,
+.user-info>img:hover,
+.project-card img:hover,
+.trending-user:hover,
+.announcement:hover,
+.header-buttons>button:hover {
+  cursor: pointer;
+}
+
+.trending-card>div:hover {
+  background-color: var(--secondary-color-hover);
 }
 
 .sidebar {
@@ -67,7 +86,8 @@ img {
   padding-top: 40px;
 }
 
-.navigation, .branding {
+.navigation,
+.branding {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-auto-rows: 50px;
@@ -95,7 +115,7 @@ img {
 
 .search-bar-area>input {
   height: 30px;
-  width: clamp(300px, 70% , 1000px);
+  width: clamp(300px, 70%, 1000px);
   padding-left: 15px;
   font-size: large;
   background-color: var(--secondary-color);
@@ -112,7 +132,8 @@ img {
   gap: 20px;
 }
 
-.user-icon, .trending-user-icon {
+.user-icon,
+.trending-user-icon {
   height: 60px;
   width: 60px;
 }
@@ -122,7 +143,8 @@ img {
   padding-bottom: 15px;
 }
 
-.greeting, .trending-user {
+.greeting,
+.trending-user {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr 1fr;
@@ -169,6 +191,10 @@ img {
   border: none;
 }
 
+.header-buttons>button:hover {
+  background-color: var(--primary-color-hover);
+}
+
 .main-content {
   background-color: var(--secondary-color);
   padding-bottom: 30px;
@@ -189,7 +215,9 @@ img {
   grid-template-rows: 1fr 10fr;
 }
 
-.projects>p, .announcement-title, .trending-title {
+.projects>p,
+.announcement-title,
+.trending-title {
   font-size: 1.3em;
 
   align-self: center;
@@ -223,7 +251,8 @@ img {
   align-self: end;
 }
 
-.card-text, .announcement-text {
+.card-text,
+.announcement-text {
   color: var(--grey-text-color);
   font-weight: 500;
 }
@@ -240,7 +269,8 @@ img {
   width: 30px;
 }
 
-.announcements, .trending {
+.announcements,
+.trending {
   padding-right: 30px;
 
   display: grid;
@@ -253,7 +283,8 @@ img {
   align-items: stretch;
 }
 
-.announcement-card, .trending-card {
+.announcement-card,
+.trending-card {
   background-color: white;
   border: 20px solid white;
   border-radius: 10px;
@@ -271,13 +302,17 @@ img {
   font-size: 0.8em;
 }
 
+.announcement:hover {
+  background-color: var(--secondary-color-hover);
+}
+
 .trending-card {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 15px;
 }
 
-.trending-user-project{
+.trending-user-project {
   font-size: 0.9em;
   color: var(--grey-text-color);
 
@@ -288,7 +323,9 @@ img {
   grid-row: 1 / span 2;
 }
 
-.project-card, .announcement-card, .trending-card {
+.project-card,
+.announcement-card,
+.trending-card {
   z-index: 1;
   box-shadow: 5px 5px 5px lightgray;
 }
