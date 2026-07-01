@@ -294,15 +294,17 @@ img {
 }
 
 footer {
+  font-size: 0.9em;
   background-color: rgb(12, 118, 168);
   color: var(--light-text-color);
+  padding-right: 50px;
 
   grid-column: 1 / span 2;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 200px;
+  align-items: end;
 }
 
 a {
