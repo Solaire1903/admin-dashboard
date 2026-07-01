@@ -119,6 +119,7 @@ img {
 
 .greeting {
   padding-left: 50px;
+  padding-bottom: 15px;
 }
 
 .greeting, .trending-user {
